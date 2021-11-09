@@ -4,24 +4,24 @@
     <figure class="preview__figure" :style="getBgImg(post.image)">
       <transition name="v--fade">
         <figcaption class="preview__details">
-          <route-link class="preview__title"
+          <router-link class="preview__title"
           :to="`/blog/${post.id}`"
           @click="scrollTo(0, 220, scrollDelay)"
           >
           {{ post.title }}
-          </route-link>
+          </router-link>
 
           <div class="preview__meta">
             <time class="preview__published">
               {{ prettyDate(post.published) }}
             </time>
 
-            <route-link class="preview__author"
-            :to="`/blog/${post.id}`"
+            <router-link class="preview__author"
+            :to="`/by/${kebabify(post.author)}`"
             @click="scrollTo(0, 220, scrollDelay)"
             >
               {{ post.author }}
-            </route-link>
+            </router-link>
           </div>
         </figcaption>
       </transition>
@@ -45,8 +45,12 @@ export default {
     }
   },
 
-  // computed: {
-  // },
+  computed: {
+    feed() {
+      console.log("Hit", this.posts)
+      return this.posts
+    }
+  },
 
   methods: {
     scrollTo,
@@ -56,10 +60,9 @@ export default {
       return { backgroundImage: `url(${src})`}
     },
     stackPosts(posts) {
-      let interval = undefined
+      let interval
       const stack = () => {
         this.posts.push(posts.shift())
-
         if(!posts.length) {
           this.transition = 'preview'
           clearInterval(interval)
