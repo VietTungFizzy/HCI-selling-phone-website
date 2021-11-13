@@ -23,11 +23,13 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.nav-links {
-  ul {
-    a#link{
-      color: #EC4899;
-    }
-  }
+header {
+  z-index: 99;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 0 25px;
+}
+
+.nav-links ul a#link {
+  color: #EC4899;
 }
 </style>
