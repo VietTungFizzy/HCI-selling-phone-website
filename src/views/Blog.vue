@@ -24,7 +24,7 @@
     <carousel :settings="carouselSettings" :autoplay="constants.AUTOPLAY_TIME" :wrap-around="true">
       <Slide v-for="slide in 10" :key="slide">
         <div class="owl-headline">
-          <blog-card type="2"/>
+          <blog-card :type="2"/>
         </div>
       </Slide>
     </carousel>
@@ -43,14 +43,14 @@
     Tin tức mới nhất
   </div>
 </div>
-<div>
-  <blog-card type="1"/>
-  <blog-card type="1"/>
-  <blog-card type="1"/>
-  <blog-card type="1"/>
-  <blog-card type="1"/>
-  <blog-card type="1"/>
-  <blog-card type="1"/>
+<div ref="scrollComponent">
+  <blog-card :type="1"/>
+  <blog-card :type="1"/>
+  <blog-card :type="1"/>
+  <blog-card :type="1"/>
+  <blog-card :type="1"/>
+  <blog-card :type="1"/>
+  <blog-card :type="1"/>
 </div>
 </template>
 <script>
@@ -75,10 +75,26 @@ export default {
   },
   created() {
     this.constants = {
-      AUTOPLAY_TIME: 2000
+      AUTOPLAY_TIME: 2000,
+      FOOTER_HEIGHT: 376
     }
   },
+
+  computed: {
+  },
+
+  mounted() {
+    window.addEventListener("scroll",this.handleScroll)
+  },
+  unmounted() {
+    window.removeEventListener("scroll",this.handleScroll)
+  },
   methods: {
+    handleScroll() {
+      if(this.$refs.scrollComponent.getBoundingClientRect().bottom + this.constants.FOOTER_HEIGHT <= window.innerHeight) {
+        console.log("Reach limit")
+      }
+    }
   }
 }
 </script>
