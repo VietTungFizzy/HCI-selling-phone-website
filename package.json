@@ -12,7 +12,7 @@
     "sass": "^1.43.4",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
-    "vue-tailwind": "^2.5.0",
+    "vue3-carousel": "^0.1.30",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {

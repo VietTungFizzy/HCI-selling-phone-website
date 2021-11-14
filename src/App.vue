@@ -2,8 +2,14 @@
   <div id="nav">
     <Navigation/>
   </div>
-  <router-view/>
-  <div id="footer">
+  <div class="grid grid-cols-12 mt-3">
+    <div class="col-span-2"></div>
+    <div class="col-span-8">
+      <router-view/>
+    </div>
+    <div class="col-span-2"></div>
+  </div>
+  <div class="inset-x-0 bottom-0" id="footer">
     <Footer/>
   </div>
 </template>
@@ -26,6 +32,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 100vh;
 }
 
 #footer {
