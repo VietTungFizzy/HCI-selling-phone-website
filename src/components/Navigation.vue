@@ -4,8 +4,8 @@
   <div class="col-span-8">
     <nav class="relative flex flex-wrap flex-row items-center justify-between">
       <div class="branding">
-        <router-link to="/" custom>
-          <img src="../assets/icon.png" width="60" height="60">
+        <router-link to="/" custom v-slot="{navigate}">
+          <img src="../assets/icon.png" width="60" height="60" @click="navigate">
         </router-link>
       </div>
       <div class="nav-links">

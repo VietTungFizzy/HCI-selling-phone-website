@@ -2,7 +2,6 @@
 <div id="headline" class="px-5">
   <div class="headline-height relative z-0">
     <div class="gradient h-full">
-    <!-- <img src="dung-smartphone-ngoai-duong-1-1140x596.jpg" class="h-full from-transparent to-black"> -->
       <div class="
       inset-x-0
       bottom-0
@@ -14,14 +13,17 @@
       text-4xl
       font-bold
       ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sequi
-        tenetur, voluptatibus harum consequuntur alias quaerat excepturi
-        temporibus nisi commodi
+        Nếu bạn vẫn đang “cắm mặt” vào điện thoại khi đi ngoài đường, hãy bỏ ngay thói quen nguy hiểm này
       </div>
     </div>
   </div>
   <div class="mt-2">
-    <carousel :settings="carouselSettings" :autoplay="constants.AUTOPLAY_TIME" :wrap-around="true">
+    <carousel
+    :settings="carouselSettings"
+    :autoplay="constants.AUTOPLAY_TIME"
+    :breakpoints="carouselBreakpoints"
+    :wrap-around="true"
+    >
       <Slide v-for="(post, index) in posts" :key="index">
         <div class="owl-headline">
           <blog-card :type="2" :post="post"/>
@@ -63,8 +65,22 @@ export default {
   data() {
     return {
       carouselSettings: {
-        itemsToShow: 3,
+        itemsToShow: 1,
         snapAlign: 'center',
+      },
+      carouselBreakpoints: {
+        500: {
+          itemsToShow: 2,
+          snapAlign: 'even',
+        },
+        700: {
+          itemsToShow: 3,
+          snapAlign: 'odd',
+        },
+        1720: {
+          itemsToShow: 4,
+          snapAlign: 'even',
+        }
       },
       posts: []
     }
