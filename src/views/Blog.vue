@@ -22,9 +22,9 @@
   </div>
   <div class="mt-2">
     <carousel :settings="carouselSettings" :autoplay="constants.AUTOPLAY_TIME" :wrap-around="true">
-      <Slide v-for="slide in 10" :key="slide">
+      <Slide v-for="(post, index) in posts" :key="index">
         <div class="owl-headline">
-          <blog-card :type="2"/>
+          <blog-card :type="2" :post="post"/>
         </div>
       </Slide>
     </carousel>
@@ -44,19 +44,14 @@
   </div>
 </div>
 <div ref="scrollComponent">
-  <blog-card :type="1"/>
-  <blog-card :type="1"/>
-  <blog-card :type="1"/>
-  <blog-card :type="1"/>
-  <blog-card :type="1"/>
-  <blog-card :type="1"/>
-  <blog-card :type="1"/>
+  <blog-card :type="1" v-for="(post, index) in posts" :post="post" :key="index"/>
 </div>
 </template>
 <script>
 import BlogCard from '../components/BlogCard.vue'
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide } from 'vue3-carousel';
+import axios from "axios";
 
 export default {
   name: "Blogs",
@@ -68,16 +63,18 @@ export default {
   data() {
     return {
       carouselSettings: {
-        itemsToShow: 2.85,
+        itemsToShow: 3,
         snapAlign: 'center',
       },
+      posts: []
     }
   },
   created() {
     this.constants = {
-      AUTOPLAY_TIME: 2000,
+      AUTOPLAY_TIME: 0,
       FOOTER_HEIGHT: 376
     }
+    this.fetchPost()
   },
 
   computed: {
@@ -92,8 +89,15 @@ export default {
   methods: {
     handleScroll() {
       if(this.$refs.scrollComponent.getBoundingClientRect().bottom + this.constants.FOOTER_HEIGHT <= window.innerHeight) {
-        console.log("Reach limit")
+        this.fetchPost()
       }
+    },
+    fetchPost() {
+      const _this = this
+      axios.get("http://localhost:8080/api/blog/blog-post-thumbnails.json")
+      .then(response => {
+        _this.posts = _this.posts.concat(response.data.result.data)
+      })
     }
   }
 }
@@ -111,7 +115,8 @@ export default {
 }
 
 .owl-headline {
-  max-height: 240px;
-  padding-right: 20px;
+  max-height: 250px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 </style>
