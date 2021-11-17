@@ -2,30 +2,35 @@
   "result": {
     "data": [
       {
-        "title": "Đánh giá chi tiết Xiaomi 11T: Thiết kế đẹp, hiệu năng ổn, pin ngon, sạc nhanh, camera không quá ấn tượng",
-        "content": "Camera 108MP, pin 5000 mAh với sạc nhanh 67W, hiệu năng ổn với bộ xử lý MediaTek Dimensity 1200U, màn hình AMOLED 120Hz và thiết kế khá hút mắt là những điểm nhấn của Xiaomi 11T trong bài đánh giá này.",
-        "image": "/images/Xiaomi-11T-sforum-7-350x250.jpeg",
-        "author": "TIZU"
+        "id": 1,
+        "title": "OPPO A95 4G ra mắt với chip Snapdragon 662, pin 5,000 mAh và sạc nhanh 33W, giá chỉ 5.98 triệu đồng",
+        "content": "Sau một thời gian dài xuất hiện dưới dạng tin đồn thì mới đây, điện thoại OPPO A95 4G đã chính thức ra mắt tại thị trường Malaysia.",
+        "image": "/images/OPPO-A95-4G-Render-1.png",
+        "author": "Hải Nam"
       },
       {
+        "id": 2,
         "title": "Samsung sẽ ra mắt 52 điện thoại thông minh vào năm 2022",
         "content": "Samsung đạt kỷ lục về doanh số smartphone màn hình gập với bộ đôi Galaxy Z Flip3 và Galaxy Z Fold3. Chỉ riêng doanh số bán hàng của công ty tại Hàn Quốc đã vượt 1 triệu chiếc.",
         "image": "/images/dien-thoai-Samsung-face-350x250.jpg",
         "author": "Hải Nam"
       },
       {
+        "id": 3,
         "title": "iPad Mini 6 (2021) và iPad Gen 9 (10.2 inch) 2021 chính thức lên kệ",
         "content": "2 chiếc máy tính bảng đáng mong chờ đến từ “nhà Táo” iPad Mini 6 (2021) và iPad Gen 9 (10.2 inch) 2021 chính hãng VN/A đã chính thức “lên kệ” với mức giá hấp dẫn.",
         "image": "/images/ipad-mini-6-12-scaled-1-350x250.jpg",
         "author": "Mixu"
       },
       {
+        "id": 4,
         "title": "Galaxy A33 5G lộ ảnh render sắc nét kèm thông số kỹ thuật chi tiết",
         "content": "Samsung đã phát hành Galaxy A32 5G vào tháng 1 năm nay và không lâu sau đó, biến thể 4G của điện thoại này cũng đã xuất hiện.",
         "image": "/images/Galaxy-A33-5G-face-350x250.jpg",
         "author": "Hải Nam"
       },
       {
+        "id": 5,
         "title": "FileZilla là gì? Hướng dẫn cài đặt và trao đổi dữ liệu lên web server dễ dàng",
         "content": "Bạn đang tập tành thiết kế Web và mong muốn tìm được một phần mềm có thể giúp bạn truyền tải dữ liệu giữa máy tính cá nhân lên máy chủ một cách nhanh chóng, ngoài ra còn có thể quản lý các nội dung thông qua tài khoản FTP. Do đó, FileZilla đã được ra đời dựa trên những nhu cầu và mong muốn của người dùng cùng với những ưu điểm nổi bật hơn so với các phần mềm khác.",
         "image": "/images/CACH-CAI-DAT-VA-SU-DUNG-FILEZILLA-bg-1-350x250.jpg",
