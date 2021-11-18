@@ -32,6 +32,19 @@
     <h5 class="text-sm font-semibold mb-2 cursor-pointer text-justify">{{trimmedTitle(50, post.title)}}</h5>
   </div>
 </div>
+<div v-else-if="type==3" class="flex">
+  <div class="cursor-pointer max-height-for-type-2 flex-none thumbail-size">
+    <img :src="post.image" class="h-full w-full"/>
+  </div>
+  <div class="ml-2 flex flex-col justify-between">
+    <div>
+      <h5 class="text-sm font-semibold mb-2 cursor-pointer text-justify">{{trimmedTitle(100, post.title)}}</h5>
+    </div>
+    <div class="text-sm text-gray-400 text-left ml-5">
+      <i class="far fa-clock"></i> 4 Giây trước
+    </div>
+  </div>
+</div>
 </template>
 <script>
 export default {
@@ -69,5 +82,10 @@ export default {
 
 .img-size {
   width: 260px;
+}
+
+.thumbail-size {
+  width: 130px;
+  height: 100px;
 }
 </style>

@@ -68,13 +68,32 @@
 <div v-if="comments.length !== 0">
   <Comment v-for="comment in comments" :key="comment.id" :data="comment"/>
 </div>
-<div v-else class="text-center mt-5">
+<div v-else class="text-center my-5 border-b">
   <em><Strong>Hiện tại không có bình luận nào</Strong></em>
 </div>
+<div>
+  <div class="
+  h-6
+  pl-2
+  mb-5
+  text-left
+  text-white
+  font-bold
+  bg-red-600
+  ">
+    Bài viết liên quan
+  </div>
+</div>
+<div class="grid grid-cols-2">
+    <blog-card :type="3" v-for="(post, index) in relatedBlogs" :post="post" :key="index" class="ml-2 mb-2"/>
+</div>
+<scroll-to-top-button :visibleY="600"></scroll-to-top-button>
 </template>
 <script>
 import axios from "axios";
 import Comment from "../components/Comment.vue"
+import BlogCard from '../components/BlogCard.vue'
+import ScrollToTopButton from '../components/ScrollToTopButton.vue'
 // import jQuery from "jquery";
 // const $ = jQuery;
 // window.$ = $;
@@ -85,13 +104,16 @@ export default {
     id: String
   },
   components: {
-    Comment
+    Comment,
+    BlogCard,
+    ScrollToTopButton
   },
   data() {
     return {
       post: null,
       comments: [],
       commentEntered: "",
+      relatedBlogs: []
     }
   },
   created() {
@@ -103,6 +125,10 @@ export default {
     axios.get(`http://localhost:8080/api/comment/comment-post-${this.id}.json`)
     .then(response => {
       _this.comments = response.data.result.data
+    })
+    axios.get("http://localhost:8080/api/blog/blog-post-thumbnails.json")
+    .then(response => {
+      _this.relatedBlogs = response.data.result.data
     })
   },
   methods: {

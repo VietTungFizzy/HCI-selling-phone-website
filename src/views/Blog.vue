@@ -48,9 +48,11 @@
 <div ref="scrollComponent">
   <blog-card :type="1" v-for="(post, index) in posts" :post="post" :key="index"/>
 </div>
+<scroll-to-top-button :visibleY="600"></scroll-to-top-button>
 </template>
 <script>
-import BlogCard from '../components/BlogCard.vue'
+import BlogCard from '../components/BlogCard.vue';
+import ScrollToTopButton from '../components/ScrollToTopButton.vue'
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide } from 'vue3-carousel';
 import axios from "axios";
@@ -60,7 +62,8 @@ export default {
   components: {
     BlogCard,
     Carousel,
-    Slide
+    Slide,
+    ScrollToTopButton
   },
   data() {
     return {
