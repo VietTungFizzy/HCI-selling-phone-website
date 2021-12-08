@@ -2,14 +2,20 @@
   <div id="nav">
     <Navigation/>
   </div>
-  <div class="grid grid-cols-12 mt-3">
+  <div :class="{
+    'grid': true,
+    'grid-cols-12': true,
+    'mt-3': true,
+    'bg-black': currentRouteName() == 'PromotionDetail'
+  }">
     <div class="col-span-2"></div>
     <div class="col-span-8">
       <router-view/>
     </div>
-    <div class="col-span-2"></div>
+    <div class="col-span-2">
+    </div>
   </div>
-  <div class="inset-x-0 bottom-0" id="footer">
+  <div class="inset-x-0 bottom-0 bg-gray-100" id="footer">
     <Footer/>
   </div>
 </template>
@@ -22,6 +28,11 @@ export default {
   components: {
     Navigation,
     Footer
+  },
+  methods: {
+    currentRouteName() {
+      return this.$route.name
+    }
   }
 }
 </script>
@@ -33,9 +44,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   height: 100vh;
-}
-
-#footer {
-  margin-top: 50px;
 }
 </style>

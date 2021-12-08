@@ -1,0 +1,124 @@
+{
+  "result": {
+    "data": {
+      "id": 1,
+      "title": "Siêu phẩm Apple 2021",
+      "promotions": [
+        {
+          "section-title": "Sản phẩm mới ra mắt",
+          "section-data": [
+            {
+              "image": "images/macbook-pro-2021-007_4.jpg",
+              "title": "Macbook Pro 16 M1 Max 10 CPU - 32 GPU 32GB 1TB 2021 | Chính hãng Apple Việt Nam",
+              "price": "92.990.000",
+              "type": 1
+            },
+            {
+              "image": "images/macbook-pro-2021-007_4.jpg",
+              "title": "Macbook Pro 14 M1 Pro 10 CPU - 16 GPU 16GB 1TB 2021 | Chính hãng Apple Việt Nam",
+              "price": "65.990.000",
+              "type": 1
+            },
+            {
+              "image": "images/macbook-pro-2021-007_4.jpg",
+              "title": "Macbook Pro 16 inch 2021 | Chính hãng Apple Việt Nam",
+              "price": "65.990.000",
+              "type": 1
+            },
+            {
+              "image": "images/macbook-pro-2021-007_4.jpg",
+              "title": "Macbook Pro  M1 Pro 16 10 CPU - 16 GPU 16GB 1TB 2021 | Chính hãng Apple Việt Nam",
+              "price": "70.990.000",
+              "type": 1
+            }
+          ]
+        },
+        {
+          "section-title": "iPhone 13",
+          "section-data": [
+            {
+              "image": "images/ip13-pro_2.jpg",
+              "title": "iPhone 13 | Chính hãng VN/A",
+              "old-price": "24.990.000",
+              "new-price": "23.500.000",
+              "discount": 6,
+              "type": 2
+            },
+            {
+              "image": "images/iphone_13-_pro-5_4.jpg",
+              "title": "iPhone 13 Pro Max | Chính hãng VN/A",
+              "old-price": "34.990.000",
+              "new-price": "33.990.000",
+              "discount": 3,
+              "type": 2
+            },
+            {
+              "image": "images/iphone_13-_pro-5_4.jpg",
+              "title": "iPhone 13 Pro | Chính hãng VN/A",
+              "old-price": "31.990.000",
+              "new-price": "30.990.000",
+              "discount": 3,
+              "type": 2
+            },
+            {
+              "image": "images/iphone_13-_pro-5_4.jpg",
+              "title": "iPhone 13 Pro Max 256GB | Chính hãng VN/A",
+              "old-price": "37.990.000",
+              "new-price": "36.990.000",
+              "discount": 3,
+              "type": 2
+            },
+            {
+              "image": "images/iphone-13-01_6.jpg",
+              "title": "iPhone 13 mini | Chính hãng VN/A",
+              "old-price": "21.990.000",
+              "new-price": "20.500.000",
+              "discount": 7,
+              "type": 2
+            },
+            {
+              "image": "images/iphone_13-_pro-5_4.jpg",
+              "title": "iPhone 13 Pro Max 1TB | Chính hãng VN/A",
+              "old-price": "49.990.000",
+              "new-price": "47.000.000",
+              "discount": 6,
+              "type": 2
+            },
+            {
+              "image": "images/iphone_13-_pro-5_4.jpg",
+              "title": "iPhone 13 Pro Max 512GB | Chính hãng VN/A",
+              "old-price": "43.990.000",
+              "new-price": "43.000.000",
+              "discount": 2,
+              "type": 2
+            },
+            {
+              "image": "images/ip13-pro_2.jpg",
+              "title": "iPhone 13 256GB | Chính hãng VN/A",
+              "old-price": "27.990.000",
+              "new-price": "25.000.000",
+              "discount": 11,
+              "type": 2
+            },
+            {
+              "image": "images/iphone_13-_pro-5_4.jpg",
+              "title": "iPhone 13 Pro 256GB | Chính hãng VN/A",
+              "old-price": "34.990.000",
+              "new-price": "34.490.000",
+              "discount": 1,
+              "type": 2
+            },
+            {
+              "image": "images/iphone-13-01_6.jpg",
+              "title": "iPhone 13 mini 256GB | Chính hãng VN/A",
+              "old-price": "24.990.000",
+              "new-price": "21.500.000",
+              "discount": 14,
+              "type": 2
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

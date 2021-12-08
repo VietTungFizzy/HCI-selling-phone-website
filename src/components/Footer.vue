@@ -2,7 +2,8 @@
 <footer class="
 text-gray-600
 body-font
-bg-gray-100">
+bg-gray-100
+">
   <div
     class="
       container

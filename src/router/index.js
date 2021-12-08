@@ -25,6 +25,17 @@ const routes = [
     name: 'Post',
     component: () => import('../views/Post.vue'),
     props: true
+  },
+  {
+    path: '/promotion/:id',
+    name: 'PromotionDetail',
+    component: () => import('../views/PromotionDetail.vue'),
+    props: true
+  },
+  {
+    path: '/promotions',
+    name: 'Promotion',
+    component: () => import('../views/Promotions.vue'),
   }
 ]
 
