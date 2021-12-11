@@ -1,6 +1,6 @@
 <template>
 <div id="headline" class="px-5">
-  <div class="headline-height relative z-0">
+  <div class="headline-height relative z-0 cursor-pointer" @click="goToHeadlinePost">
     <div class="gradient h-full">
       <div class="
       inset-x-0
@@ -13,7 +13,7 @@
       text-4xl
       font-bold
       ">
-        Nếu bạn vẫn đang “cắm mặt” vào điện thoại khi đi ngoài đường, hãy bỏ ngay thói quen nguy hiểm này
+        OPPO A95 4G ra mắt với chip Snapdragon 662, pin 5,000 mAh và sạc nhanh 33W, giá chỉ 5.98 triệu đồng
       </div>
     </div>
   </div>
@@ -117,6 +117,9 @@ export default {
       .then(response => {
         _this.posts = _this.posts.concat(response.data.result.data)
       })
+    },
+    goToHeadlinePost() {
+      this.$router.push({path: "/blog/1"})
     }
   }
 }
@@ -124,7 +127,7 @@ export default {
 <style lang="scss" scoped>
 .headline-height {
   height: 430px;
-  background-image: url("/dung-smartphone-ngoai-duong-1-1140x596.jpg");
+  background-image: url("/images/Galaxy-A33-5G-1.jpg");
   background-size: cover;
 
   .gradient {

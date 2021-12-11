@@ -3,7 +3,7 @@
   <!--Card 1-->
   <div class="shadow-md rounded-md w-full flex">
     <div class="cursor-pointer img-size flex-none">
-      <img :src="post.image" class="h-full w-full"/>
+      <img :src="post.image" class="h-full w-full" @click="goToPost"/>
     </div>
     <div class="p-5 text-left">
       <h5 class="
@@ -12,7 +12,8 @@
       mb-2
       hover:text-red-500
       cursor-pointer
-      ">{{post.title}}</h5>
+      "
+      @click="goToPost">{{post.title}}</h5>
 
       <div class="text-sm text-gray-400 mb-2">
         Bởi <strong class="text-red-500 mr-2 cursor-pointer">{{post.author}}</strong> <i class="far fa-clock"></i> 4 Giây trước
@@ -26,19 +27,28 @@
 </div>
 <div v-else-if="type==2">
   <div class="cursor-pointer max-height-for-type-2">
-    <img :src="post.image" class="h-full w-full"/>
+    <img :src="post.image" class="h-full w-full" @click="goToPost"/>
   </div>
   <div>
-    <h5 class="text-sm font-semibold mb-2 cursor-pointer text-justify">{{trimmedTitle(50, post.title)}}</h5>
+    <h5 class="text-sm font-semibold mb-2 cursor-pointer text-justify" @click="goToPost">{{trimmedTitle(50, post.title)}}</h5>
   </div>
 </div>
 <div v-else-if="type==3" class="flex">
   <div class="cursor-pointer max-height-for-type-2 flex-none thumbail-size">
-    <img :src="post.image" class="h-full w-full"/>
+    <img :src="post.image" class="h-full w-full" @click="goToPost"/>
   </div>
   <div class="ml-2 flex flex-col justify-between">
     <div>
-      <h5 class="text-sm font-semibold mb-2 cursor-pointer text-justify">{{trimmedTitle(100, post.title)}}</h5>
+      <h5
+      class="
+      text-sm
+      font-semibold
+      mb-2
+      cursor-pointer
+      text-justify"
+      @click="goToPost">
+        {{trimmedTitle(100, post.title)}}
+      </h5>
     </div>
     <div class="text-sm text-gray-400 text-left ml-5">
       <i class="far fa-clock"></i> 4 Giây trước
@@ -54,7 +64,6 @@ export default {
     post: Object
   },
   created() {
-
   },
   computed: {
 
@@ -71,6 +80,9 @@ export default {
 
       last = last || maxLength - CLAMP.length
       return content.substr(0, last) + CLAMP
+    },
+    goToPost() {
+      this.$router.push({path: `/blog/${this.post.id}`})
     }
   }
 }

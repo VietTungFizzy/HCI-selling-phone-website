@@ -1,0 +1,48 @@
+{
+  "result": {
+    "data": {
+      "promotions": [
+        {
+          "id": 1,
+          "title": "Apple chính hãng",
+          "banner": "images/banner-sis-apple-homepage.png"
+        },
+        {
+          "id": 2,
+          "title": "Apple chính hãng",
+          "banner": "images/banner-sis-apple-homepage.png"
+        },
+        {
+          "id": 3,
+          "title": "Apple chính hãng",
+          "banner": "images/banner-sis-apple-homepage.png"
+        },
+        {
+          "id": 4,
+          "title": "Apple chính hãng",
+          "banner": "images/banner-sis-apple-homepage.png"
+        },
+        {
+          "id": 5,
+          "title": "Apple chính hãng",
+          "banner": "images/banner-sis-apple-homepage.png"
+        },
+        {
+          "id": 6,
+          "title": "Apple chính hãng",
+          "banner": "images/banner-sis-apple-homepage.png"
+        },
+        {
+          "id": 7,
+          "title": "Apple chính hãng",
+          "banner": "images/banner-sis-apple-homepage.png"
+        },
+        {
+          "id": 8,
+          "title": "Apple chính hãng",
+          "banner": "images/banner-sis-apple-homepage.png"
+        }
+      ]
+    }
+  }
+}

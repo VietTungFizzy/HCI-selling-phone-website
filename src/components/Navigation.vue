@@ -10,10 +10,10 @@
       </div>
       <div class="nav-links">
         <ul>
-          <router-link active-class="text-pink-color background-transparent font-bold uppercase px-3 py-1 text-xs outline-none focus:outline-none mr-1 mb-1" to="#" id="link">Thị trường</router-link>
-          <router-link active-class="text-pink-color background-transparent font-bold uppercase px-3 py-1 text-xs outline-none focus:outline-none mr-1 mb-1" to="#" id="link">Đánh giá</router-link>
-          <router-link active-class="text-pink-color background-transparent font-bold uppercase px-3 py-1 text-xs outline-none focus:outline-none mr-1 mb-1" to="#" id="link">Khuyến mãi</router-link>
-          <router-link active-class="text-pink-color background-transparent font-bold uppercase px-3 py-1 text-xs outline-none focus:outline-none mr-1 mb-1" to="#" id="link">Liên lạc</router-link>
+          <router-link class="text-pink-color background-transparent font-bold uppercase px-3 py-1 text-xs outline-none focus:outline-none mr-1 mb-1" to="/blogs" id="link">Thị trường</router-link>
+          <router-link class="text-pink-color background-transparent font-bold uppercase px-3 py-1 text-xs outline-none focus:outline-none mr-1 mb-1" to="/blogs" id="link">Đánh giá</router-link>
+          <router-link class="text-pink-color background-transparent font-bold uppercase px-3 py-1 text-xs outline-none focus:outline-none mr-1 mb-1" to="/promotions" id="link">Khuyến mãi</router-link>
+          <router-link class="text-pink-color background-transparent font-bold uppercase px-3 py-1 text-xs outline-none focus:outline-none mr-1 mb-1" to="/contact-us" id="link">Liên lạc</router-link>
         </ul>
       </div>
     </nav>
