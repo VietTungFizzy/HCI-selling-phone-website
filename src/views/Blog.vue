@@ -113,7 +113,7 @@ export default {
     },
     fetchPost() {
       const _this = this
-      axios.get("http://localhost:8080/api/blog/blog-post-thumbnails.json")
+      axios.get("/api/blog/blog-post-thumbnails.json")
       .then(response => {
         _this.posts = _this.posts.concat(response.data.result.data)
       })

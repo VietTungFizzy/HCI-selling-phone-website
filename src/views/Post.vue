@@ -118,15 +118,15 @@ export default {
   },
   created() {
     const _this = this
-    axios.get(`http://localhost:8080/api/blog/post-content-${this.id}.json`)
+    axios.get(`/api/blog/post-content-${this.id}.json`)
     .then(response => {
       _this.post = response.data.result.data
     })
-    axios.get(`http://localhost:8080/api/comment/comment-post-${this.id}.json`)
+    axios.get(`/api/comment/comment-post-${this.id}.json`)
     .then(response => {
       _this.comments = response.data.result.data
     })
-    axios.get("http://localhost:8080/api/blog/blog-post-thumbnails.json")
+    axios.get("/api/blog/blog-post-thumbnails.json")
     .then(response => {
       _this.relatedBlogs = response.data.result.data
     })

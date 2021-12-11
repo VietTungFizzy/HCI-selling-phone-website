@@ -57,7 +57,7 @@ export default {
   },
   created() {
     const _this = this
-    axios.get("http://localhost:8080/api/promotion/promotions.json")
+    axios.get("/api/promotion/promotions.json")
     .then(response => {
       console.log(response.data.result)
       _this.promotions = response.data.result.data.promotions
