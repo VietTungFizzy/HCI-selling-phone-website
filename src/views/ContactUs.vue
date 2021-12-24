@@ -36,5 +36,9 @@
   </div>
 </div>
 </template>
-<script></script>
+<script>
+export default {
+  name: "ContactUs"
+}
+</script>
 <style lang="scss" scoped></style>

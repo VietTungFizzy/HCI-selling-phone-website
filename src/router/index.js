@@ -36,6 +36,16 @@ const routes = [
     path: '/promotions',
     name: 'Promotion',
     component: () => import('../views/Promotions.vue'),
+  },
+  {
+    path: '/faq',
+    name: 'FAQ',
+    component: () => import('../views/FAQ.vue')
+  },
+  {
+    path: '/contact',
+    name: 'ContactUs',
+    component: () => import('../views/ContactUs.vue')
   }
 ]
 

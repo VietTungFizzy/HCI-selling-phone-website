@@ -61,7 +61,6 @@ export default {
     .then(response => {
       console.log(response.data.result)
       _this.promotions = response.data.result.data.promotions
-      console.log(_this.promotions)
     })
   },
   methods: {

@@ -1,0 +1,46 @@
+{
+  "result": {
+    "data": [
+      {
+        "id": 1,
+        "question": "Hướng dẫn mua hàng",
+        "answear": "<p>Quý khách hàng có thể đặt hàng tại cửa hàng bằng một trong các cách dưới đây:<br>1. Gọi điện thoại: (miễn phí cước gọi) để được tư vấn và mua hàng nhanh nhất.<br>2. Đặt hàng trực tuyến trên website:<br>Quý khách có thể đăng ký bằng số điện thoại và mật khẩu để đặt hàng. Hoặc có thể đặt hàng mà không thông qua việc đăng lý. Tuy nhiên lúc thanh toán khách hàng phải điền đủ mọi thông tin để nhân viên liên hệ xác nhận và giao hàng.<br>Việc đăng ký nhằm mục đích để lưu lại các sản phẩm mà gia đình đã lựa chọn và mua tại cửa hàng ở giỏ hàng. Cũng như kiểm tra được mình đã tham gia các chương trình giảm giá của cửa hàng vào lần nào.<br> 3. Hệ thống cửa hàng trên toàn quốc:Bạn có thể tìm thấy các chi nhánh của cửa hàng trên toàn quốc đang đặt ở đâu. Các tỉnh và vị trí mình có thể đến mua thuận tiện với mọi gia đình trên lãnh thổ. Hiện Cửa hàng có chi nhánh ở Đà Nẵng, Tp Hồ Chí Minh, Cam-pu-chia và các đại lý phân phối các dòng xe điện trẻ em ở toàn quốc thuộc các tỉnh khác nhau.</p>"
+      },
+      {
+        "id": 2,
+        "question": "Làm sao để tôi có thể sử dụng mã giảm giá?",
+        "answear": "<p>Khi quý khách nhận được mã giảm giá, cách thức sử dụng như sau:<br>+ Chọn sản phẩm quý khách muốn mua.<br>+ Nhấn nút Mua hàng<br>+ Sau khi lựa chọn xong 1 hoặc nhiều sản phẩm cần mua, quý khách bấm nút Tiến hành thanh toán<br>+ Tại đây quý khách sẽ có ô Nhập mã khuyến mại (nếu có) và nút bấm màu xanh bên cạnh để kiểm tra mã coupon có thể sử dụng được không<br>+ Khi mã giảm giá thêm vào thành công, quý khách sẽ thấy đơn hàng được trừ phần tiền giảm giá tương ứng.</p>"
+      },
+      {
+        "id": 3,
+        "question": "Tại sao tôi không sử dụng được mã giảm giá?",
+        "answear": "<p>Thông thường, mã giảm giá được cung cấp cho quý khách đều có những quy định rõ về phạm vi sử dụng nhất định. Một số quy định thông thường:<br>+ Mã giảm giá sẽ không được sử dụng cũng như áp dụng cho sản phẩm khuyến mãi.<br>+ Đối với mã giảm giá có thời hạn sử dụng cụ thể, qua thời gian quy định sẽ hết hạn sử dụng<br>+ Mã giảm giá có sự ràng buộc bởi giá trị đơn hàng tối thiểu khi lập đơn.<br>+ Mỗi mã giảm giá chỉ có thể sử dụng được 01 (một) lần (trừ khi có quy định khác)<br>+ Mã giảm giá phải được sử dụng thành công khi áp dụng trong lúc đặt hàng (quý khách sẽ thấy đơn hàng được trừ ngay phần tiền giảm giá tương ứng)</p>"
+      },
+      {
+        "id": 4,
+        "question": "Sau khi đặt hàng, tôi muốn Cửa hàng có giao hàng sớm theo yêu cầu của tôi được không?",
+        "answear": "<p><br>Trong trường hợp nếu khách có yêu cầu đặc biệt, Cửa Hàng sẽ xử lý đơn hàng và giao hàng trong thời gian sơm nhất. Đối với quý khách hàng trong nội thành có thể giao trong ngày, còn các tỉnh khác sẽ có thời gian từ 3 đến 5 ngày. Tùy nhiên thời gian này sẽ phụ thuộc vào thời gian tết, mưa bão,.. mà thời gian giao hàng sẽ có sự chênh lệch sẽ được thông báo. Khách hàng sẽ nhận được sản phẩm đã được đặt trong thời gian sớm nhất đúng sản phẩm đã chọn.</p>"
+      },
+      {
+        "id": 5,
+        "question": "Khách ở các tỉnh có thể nhận hàng tại nhà được không? Chi phí sẽ tính như thế nào?",
+        "answear": "<p><br>Việc giao hàng cho khách tỉnh sẽ được thảo thuận với người mua hàng theo các hình thức như: gửi bưu điện, nhà xe, các công ty dịch vụ... Các mức phí sẽ được tính dựa trên bảng giá của bên giao hàng thứ 3 khi khách hàng chấp nhận.</p>"
+      },
+      {
+        "id": 6,
+        "question": "Nếu tôi phát hiện Cửa hàng giao hàng lỗi hỏng hoặc hàng giả, người mua hàng phải làm sao?",
+        "answear": "<p><br>Khi nhân viên giao hàng, quý khách hàng vui lòng kiểm tra hàng trước khi nhận hàng. Để tránh được tình trạng đáng tiết xảy ra khi nhân viên giao hàng thanh toán. Nếu phát hiện lỗi khách hàng có yêu cầu đổi và báo qua Hotline của cửa hàng. Hoặc inbox vào các Fanpage của cửa hàng mình đã đặt mua mẫu điện thoại tại cửa hàng mà nhân viên giao đến</p>"
+      },
+      {
+        "id": 7,
+        "question": "Nếu khi nhận hàng tôi muốn trả lại thì phí tính như thế nào?",
+        "answear": "<p><br>Việc khách hàng không nhận hàng khi nhân viên giao hàng đến. Khách hàng có thể trả lại hàng khi chưa sử dụng và chưa thanh toán tiền sản phẩm khi nhân viên giao hàng đến và không cần phải trả bất kỳ chi phí nào nữa.</p>"
+      },
+      {
+        "id": 8,
+        "question": "Nếu phía công ty đến giao hàng nhưng không liên lạc được với tôi, thì hàng của tôi sẽ như thế nào? Làm sao để nhận được hàng?",
+        "answear": "<p><br>- Trước khi giao hàng, bộ phận giao hàng sẽ liên lạc với Quý khách. Nếu quá 3 lần liên lạc thất bại (hoặc liên lạc thành công nhưng khi giao hàng không có người nhận), đơn hàng của Quý khách sẽ được hủy tự động.<br>- Quý khách vui lòng liên hệ tổng đài của cửa hàng tại các website, chuyên viên tư vấn sẽ tiến hành kiểm tra trang thái đơn hàng và liên hệ với bưu cục gần nhất phát lại hàng cho quý khách.</p>"
+      }
+    ]
+  }
+}
