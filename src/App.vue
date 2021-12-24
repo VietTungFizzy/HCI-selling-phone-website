@@ -7,13 +7,16 @@
     'grid-cols-12': true,
     'mt-3': true,
     'bg-black': currentRouteName() == 'PromotionDetail'
-  }">
+  }" v-if="!specialURL.includes(currentRouteName())">
     <div class="col-span-2"></div>
     <div class="col-span-8">
       <router-view/>
     </div>
     <div class="col-span-2">
     </div>
+  </div>
+  <div v-else>
+    <router-view/>
   </div>
   <div class="inset-x-0 bottom-0 bg-gray-100" id="footer">
     <Footer/>
@@ -25,6 +28,14 @@ import Footer from './components/Footer.vue'
 
 export default {
   name: "app",
+  data() {
+    return {
+      specialURL: [
+        'ContactUs',
+        'FAQ'
+      ]
+    }
+  },
   components: {
     Navigation,
     Footer
