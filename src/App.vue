@@ -1,12 +1,12 @@
 <template>
-  <div id="nav">
+  <div id="nav" v-if="!noNeedNavURL.includes(currentRouteName())">
     <Navigation/>
   </div>
   <div :class="{
     'grid': true,
     'grid-cols-12': true,
-    'mt-3': true,
-    'bg-black': currentRouteName() == 'PromotionDetail'
+    'bg-black': currentRouteName() == 'PromotionDetail',
+    'bg-red-500': noNeedNavURL.includes(currentRouteName())
   }" v-if="!specialURL.includes(currentRouteName())">
     <div class="col-span-2"></div>
     <div class="col-span-8">
@@ -33,6 +33,9 @@ export default {
       specialURL: [
         'ContactUs',
         'FAQ'
+      ],
+      noNeedNavURL: [
+        'Login'
       ]
     }
   },

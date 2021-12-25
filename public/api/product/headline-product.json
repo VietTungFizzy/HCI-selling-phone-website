@@ -1,0 +1,51 @@
+{
+  "result": {
+    "data": [
+      {
+        "image": "/images/samsung-galaxy-s21-ultra-1_1.jpg",
+        "title": "Samsung Galaxy S21 Ultra 5G",
+        "old-price": "30.990.000",
+        "new-price": "21.200.000",
+        "discount": 31,
+        "reviews": 11,
+        "star": 5
+      },
+      {
+        "image": "/images/Galaxy-A33-5G-2.jpg",
+        "title": "Samsung Galaxy A52s 5G",
+        "old-price": "10.990.000",
+        "new-price": "9.550.000",
+        "discount": 13,
+        "reviews": 1,
+        "star": 5
+      },
+      {
+        "image": "/images/04_2_4.png",
+        "title": "Samsung Galaxy A32",
+        "old-price": "6.490.000",
+        "new-price": "5.650.000",
+        "discount": 12,
+        "reviews": 10,
+        "star": 4
+      },
+      {
+        "image": "/images/Galaxy-A33-5G-2.jpg",
+        "title": "Samsung Galaxy A12",
+        "old-price": "4.290.000",
+        "new-price": "3.550.000",
+        "discount": 17,
+        "reviews": 1,
+        "star": 5
+      },
+      {
+        "image": "/images/samsung-galaxy-s21-ultra-1_1.jpg",
+        "title": "Samsung Galaxy A22 4G",
+        "old-price": "5.890.000",
+        "new-price": "5.200.000",
+        "discount": 11,
+        "reviews": 11,
+        "star": 5
+      }
+    ]
+  }
+}
