@@ -108,6 +108,10 @@ bg-gray-100
             <router-link to="/promotions" class="text-gray-600 hover:text-gray-800"
               >Khuyến mãi</router-link>
           </li>
+          <li>
+            <router-link to="/products" class="text-gray-600 hover:text-gray-800"
+              >Tất cả các sản phẩm</router-link>
+          </li>
           <!-- <li>
             <a href="" class="text-gray-600 hover:text-gray-800"
               >Third Link</a
