@@ -109,7 +109,7 @@
         <h3 class="text-gray-600 text-2xl font-bold">CHUYÊN TRANG THƯƠNG HIỆU</h3>
       </div>
       <div class="grid gap-5 grid-cols-4 mt-6">
-        <img v-for="i in 4" :src="headlindSideBar[i % 3]" :key="i">
+        <img v-for="i in 4" :src="headlindSideBar[i % 3]" :key="i" @click="goToPromotions">
       </div>
     </div>
   </div>
@@ -160,6 +160,9 @@ export default {
     calculateStar(index, numberOfStart) {
       if(index <= numberOfStart) return "fas fa-star text-yellow-400"
       return "fas fa-star"
+    },
+    goToPromotions() {
+      this.$router.push({path: "/promotions"})
     }
   }
 }
